@@ -1,0 +1,106 @@
+@import "~bootstrap/scss/bootstrap";
+body {
+  background-color: rgb(245, 233, 235);
+}
+.header-container {
+  height: 90px;
+  width: 100%;
+  display: flex;
+  background: linear-gradient(
+    (rgb(231, 144, 173) 30%, rgb(243, 201, 112) 100%)
+  );
+  .content-product {
+    margin-left: 70px;
+    width: 250px;
+    height: 50px;
+    display: flex;
+    text-align: center;
+    margin-top: 20px;  
+  }
+  .header-content {
+    height: 40px;
+    position: absolute;
+
+    width: 100%;
+    display: flex;
+    .header-content-nav1 {
+      margin: 5px;
+      margin-left: 130px;
+      width: 250px;
+      text-align: center;
+      .header-content-phone{
+       margin-left: 80px;
+       text-decoration: none;
+       color: black;
+      }
+    }
+    .header-content-nav2 {
+      margin: 5px;
+      margin-left: 40px;
+      width: 700px;
+    }
+    .header-content-nav3 {
+      margin: 5px;
+      margin-right: 20px;
+      margin-left: 100px;
+      width: 250px;
+      display: flex;
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      .container-login {
+        margin-left: 100px;
+      }
+    }
+  }
+  .header-content-1 {
+    height: 30px;
+    position: absolute;
+    width: 100%;
+    margin-top: 35px;
+    display: flex;  
+    .content-search {
+      margin: 5px;
+      margin-left: 400px;
+      width: 600px;     
+    }
+    .content-cart {
+      margin-top: 20px;
+      margin-right: 20px;
+      margin-left: 150px;
+      width: 250px;
+      display: flex;
+      .content-iconcart {
+        font-size: 25px;
+        text-decoration: none;
+        color: black;
+        margin-right: 30px;    
+      }  
+    }
+    .user {
+      position: relative;
+      display: inline-block;
+      
+    }
+    .menu-user {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+    }
+    .menu-user a:hover {background-color: rgb(243, 202, 202);}
+
+    .user:hover .menu-user {display: block;}
+
+    .user:hover .login-user {background-color: #f0bec6;}
+  }
+}
