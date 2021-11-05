@@ -15,10 +15,17 @@ export default class NavbarComp extends Component {
                 <div>
 
                     <Navbar bg="light" expand="lg" >
-                        <Navbar.Brand href="#" className="categoryName"> <i class="fas fa-bars"></i> DANH MỤC SẢN PHẨM</Navbar.Brand>
+                        <Navbar.Brand href="#" className="categoryName"> <i class="fas fa-bars"> 
+                        
+                            <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
+                            <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
+                            <NavDropdown.Divider />
+                            <NavDropdown.Item href="#action5">Something else here</NavDropdown.Item>
+                        </i> DANH MỤC SẢN PHẨM </Navbar.Brand>
                         <Navbar.Toggle aria-controls="navbarScroll" />
                         <Navbar.Collapse id="navbarScroll">
                             <Nav
+                            
                                 // className="mr-auto my-2 my-lg-0"
                                 className="introduceName"
                                 style={{ maxHeight: '100px' }}
