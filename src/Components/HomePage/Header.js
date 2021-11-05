@@ -8,16 +8,14 @@ import FormControl from "react-bootstrap/FormControl";
 import Button from "react-bootstrap/Button";
 import 'font-awesome/css/font-awesome.min.css';
 import './fontawesome-web-5.15.3/css/all.min.css';
-import IconButton from '@mui/material/IconButton';
-import Badge from '@mui/material/Badge';
-import MenuItem from '@mui/material/MenuItem';
-import MenuIcon from '@mui/icons-material/Menu';
-import AccountCircle from '@mui/icons-material/AccountCircle';
-import MailIcon from '@mui/icons-material/Mail';
-import NotificationsIcon from '@mui/icons-material/Notifications';
+import Nav from "./nav";
 
-class Header extends Component {
-  render() {
+
+const Header =() => {
+  
+    // const [show, setShow] = useState(false);
+// const handleClose = () => setShow(false);
+// const handleShow = () => setShow(true);
     return (
         <div>
             <div className = "header-container" >
@@ -48,44 +46,22 @@ class Header extends Component {
         <Button variant = "outline-secondary"
         id = "button-addon2" >Search </Button> </InputGroup > </div> 
         <div className = "content-cart" >
-        <MenuItem >
         <a href = ""className = "content-iconcart" >
         <i className = "fas fa-cart-plus" > </i> </a >
-        <IconButton size = "large"
-        aria-label = "show 3 new mails"
-        color = "inherit" >
-        <Badge badgeContent = {
-          3
-        }
-        color = "error" >
-        <MailIcon />
-        </Badge> </IconButton > </MenuItem> 
-        <MenuItem >
-        <IconButton size = "large"
-        aria-label = "show 3 new notifications"
-        color = "inherit" >
-        <Badge badgeContent = {3}
-        color = "error" >
-        <NotificationsIcon />
-        </Badge> </IconButton > </MenuItem> 
-        <MenuItem >
-        <IconButton size = "large"
-        aria-label = "account of current user"
-        aria-controls = "primary-search-account-menu"
-        aria-haspopup = "true"
-        color = "inherit" 
-        className="user">
-          
-        <AccountCircle className="logo-user">
-        <div className="menu-user">
-                  <a href="">Đăng nhập</a> 
-                  <a href="">Đăng xuất</a> 
-                  <a href="">Thoát</a> 
-               </div> 
-        </AccountCircle>
-        </IconButton> </MenuItem></div> </div > </div>
+
+        <a href = ""className = "content-iconcart" >
+        <i class="fas fa-bell"></i> </a >
+        
+        <a href = ""className = "content-iconcart" >
+        <i class="fas fa-envelope"></i> </a >
+        
+        <a href = ""className = "content-iconcart" >
+        <i class="fas fa-user-circle"></i> </a >
+        
+        </div> </div > </div>
+        <Nav/>
         </div>
     )
 }
-}
+
 export default Header
