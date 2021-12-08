@@ -56,7 +56,6 @@ const Header = () => {
                                 <div className="hover-Login"> 
                                 <NavDropdown.Item as={Link} to="/makeup" className="item" onClick={handleShow}>Đăng nhập</NavDropdown.Item>                           
                                 <NavDropdown.Item as={Link} to="/skincare" className="item">Đăng ký</NavDropdown.Item>                          
-                                <NavDropdown.Item as={Link} to="/form" className="item" >Quản lý</NavDropdown.Item>
                                 <NavDropdown.Item as={Link} to="/body" className="item">Thoát</NavDropdown.Item>
                                 </div>
                                 </Nav.Link >

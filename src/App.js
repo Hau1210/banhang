@@ -23,9 +23,9 @@ function App() {
   return (
     <BrowserRouter>
       <div>
-        <Dashboard/>
-        {/* <Listuser/> */}
-        {/* <Header />
+        {/* <Dashboard/>  */}
+        {/* <Listuser/>  */}
+        <Header />
         <NavHeader />
         <Switch>
           <Route path="/" exact>
@@ -37,9 +37,9 @@ function App() {
           <Route path="/promotion">
             <Promotion />
           </Route>
-          <Route path="/form">
+          {/* <Route path="/form">
             <FormAdmin />
-          </Route>
+          </Route>  */}
           <Route path="/trademark">
             <Trademark />
           </Route>
@@ -64,7 +64,7 @@ function App() {
           <Route path="/others">
             <Others />
           </Route>
-        </Switch> */}
+        </Switch> 
 
       </div>
     </BrowserRouter>
