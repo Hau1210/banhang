@@ -19,6 +19,7 @@ import Hair from './Components/HomePage/category/hair';
 import Perfume from './Components/HomePage/category/perfume';
 import Others from './Components/HomePage/category/others';
 import Dashboard from "./Components/Functions/index"
+import Footer from './Components/Footer';
 function App() {
   return (
     <BrowserRouter>
@@ -37,9 +38,6 @@ function App() {
           <Route path="/promotion">
             <Promotion />
           </Route>
-          {/* <Route path="/form">
-            <FormAdmin />
-          </Route>  */}
           <Route path="/trademark">
             <Trademark />
           </Route>
@@ -67,6 +65,7 @@ function App() {
         </Switch> 
 
       </div>
+      <Footer/>
     </BrowserRouter>
 
   );

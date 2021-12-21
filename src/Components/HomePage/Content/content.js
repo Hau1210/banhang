@@ -10,6 +10,7 @@ import Others from "../category/others";
 import ContentRight from './content-right';
 import ContentCenter from './content-center';
 import ContentLeft from "./content-left";
+import Index from "../Product/index";
 
 const Content = () => {
 
@@ -26,7 +27,7 @@ const Content = () => {
                 <ContentRight/>
             </div>
             </div>
-            
+         
             <div>
                 <Switch>
                     <Route path="/makeup">
@@ -49,6 +50,7 @@ const Content = () => {
                     </Route>
                 </Switch>
             </div>
+               <Index/>
         </Router>
     );
 }

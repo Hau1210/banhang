@@ -3,6 +3,11 @@
     background: linear-gradient(
     (rgb(231, 144, 173) 30%, rgb(243, 201, 112) 100%)
   );
+  position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1111;
 }
 .Phone{
   margin-left: 150px;

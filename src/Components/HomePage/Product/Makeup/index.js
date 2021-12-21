@@ -6,23 +6,24 @@ import './style.scss';
 import Carousel from 'react-bootstrap/Carousel';
 import Card from 'react-bootstrap/Card';
 import Button from "react-bootstrap/Button";
-const Product = () => {
+const Makeup = () => {
     return (
         <div>
-            <div className="banner-productHot" >
-          <div >
-            <h4 style={{textAlign:'center'}}> SẢN PHẨM HOT </h4> </div >
-          <Carousel >
-            <Carousel.Item >
-              <div className="tab_1" >
-                <Card style={
-                  {
-                    width: '18rem'
-                  }
-                }>
-                    <Card.Img variant="top" src={kemCN} />
-                  <Card.Body >
-                    <Card.Title > Kem chống nắng </Card.Title>
+            
+            <div className = "banner-productTrademark" >
+        <div >
+        <h4 style={{textAlign:'center'}}> TRANG ĐIỂM - MAKEUP </h4> </div > 
+        <Carousel >
+        <Carousel.Item >
+        <div className = "tab_1" >
+        <Card style = {
+          {
+            width: '18rem'
+          }
+        }>
+        <Card.Img variant = "top" src = {kemCN}/> 
+        <Card.Body >
+        <Card.Title > Kem chống nắng </Card.Title>
                     <Card.Text > <h5 style={{color:'red'}}>300.000 đ</h5>
                       Kem chống nắng Innisfree Intensive Long Lasting Suncreen EX. </Card.Text >
                     <Button variant="primary" > Buy now </Button> </Card.Body > </Card>
@@ -108,9 +109,10 @@ const Product = () => {
                     <Card.Title > Serum</Card.Title>
                     <Card.Text ><h5 style={{color:'red'}}>950.000 đ</h5>
                       Serum OBAGI Cấp Nước Phục Hồi Da Daily Hydro Drops 30ml. </Card.Text >
-                    <Button variant="primary" > Buy now </Button> </Card.Body > </Card> </div> </Carousel.Item> </Carousel > </div>
+                    <Button variant="primary" > Buy now </Button> </Card.Body > </Card> </div> </Carousel.Item> </Carousel > </div> 
+        
         </div>
     );
 }
 
-export default Product;
+export default Makeup;

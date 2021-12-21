@@ -9,16 +9,6 @@ import {
 } from "react-bootstrap";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./nav.scss";
-import Introduce from "./pages/introduce";
-import Promotion from "./pages/promotion";
-import Trademark from "./pages/trademark";
-import Trend from "./pages/trend";
-import Makeup from "./category/makeup";
-import Skincare from "./category/skincare";
-import Body from "./category/body";
-import Hair from "./category/hair";
-import Perfume from "./category/perfume";
-import Others from "./category/others";
 import QR from "./img/QR_code.png";
 
 export default class NavbarComp extends Component {
@@ -70,40 +60,7 @@ export default class NavbarComp extends Component {
                         </Navbar.Collapse>
                     </Navbar>
                 </div>
-                {/* <div>
-                    <Switch>
-                        <Route path="/introduce">
-                            <Introduce />
-                        </Route>
-                        <Route path="/promotion">
-                            <Promotion />
-                        </Route>
-                        <Route path="/trademark">
-                            <Trademark />
-                        </Route>
-                        <Route path="/trend">
-                            <Trend />
-                        </Route>
-                        <Route path="/makeup">
-                            <Makeup />
-                        </Route>
-                        <Route path="/skincare">
-                            <Skincare />
-                        </Route>
-                        <Route path="/body">
-                            <Body />
-                        </Route>
-                        <Route path="/hair">
-                            <Hair />
-                        </Route>
-                        <Route path="/perfume">
-                            <Perfume />
-                        </Route>
-                        <Route path="/others">
-                            <Others />
-                        </Route>
-                    </Switch>
-                </div> */}
+                
             </Router>
         );
     }
